@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://cdn.tw93.fun//uPic/Wbrr2J.png" width="120" />
+  <img src="https://cdn.tw93.fun//uPic/Wbrr2J.png" width="100" />
   <h1>Claude Health</h1>
   <p><em>Audit your Claude Code configuration health across all layers.</em></p>
   <a href="https://github.com/tw93/claude-health/stargazers"><img src="https://img.shields.io/github/stars/tw93/claude-health?style=flat-square" alt="Stars"></a>
@@ -10,7 +10,7 @@
 
 <br/>
 
-A Claude Code [skill](https://docs.anthropic.com/en/docs/claude-code/skills) that systematically reviews your project's setup using the six-layer framework: `CLAUDE.md → rules → skills → hooks → subagents → verifiers`. It detects project complexity, runs four parallel diagnostic agents, and outputs a prioritized report telling you what to fix first.
+A Claude Code skill that systematically reviews your project's setup using the six-layer framework: `CLAUDE.md → rules → skills → hooks → subagents → verifiers`. It detects project complexity, runs four parallel diagnostic agents, and outputs a prioritized report telling you what to fix first.
 
 ## Install
 
@@ -24,7 +24,7 @@ In any Claude Code session, run `/health` or just say:
 
 > "Run a health check on my Claude Code config"
 
-The skill automatically detects your project tier (Simple / Standard / Complex) and calibrates checks accordingly — it won't flag missing layers that aren't needed for your project size.
+The skill automatically detects your project tier (Simple / Standard / Complex) and calibrates checks accordingly. It won't flag missing layers that aren't needed for your project size.
 
 ## What Gets Checked
 
@@ -45,13 +45,13 @@ The skill automatically detects your project tier (Simple / Standard / Complex) 
 
 Results are grouped into three priority levels:
 
-- **Critical** — Fix now: rule violations, dangerous permissions, cache-breaking patterns, MCP overhead >12.5%, skill security issues (prompt injection, data exfiltration, etc.)
-- **Structural** — Fix soon: misplaced content, missing hooks, single-layer critical rules, skill quality issues (bloated content, broken references)
-- **Incremental** — Nice to have: context hygiene, HANDOFF.md adoption, skill frequency tuning, skill provenance (symlink sources, version tracking)
+- **Critical**: Fix now: rule violations, dangerous permissions, cache-breaking patterns, MCP overhead >12.5%, skill security issues (prompt injection, data exfiltration, etc.)
+- **Structural**: Fix soon: misplaced content, missing hooks, single-layer critical rules, skill quality issues (bloated content, broken references)
+- **Incremental**: Nice to have: context hygiene, HANDOFF.md adoption, skill frequency tuning, skill provenance (symlink sources, version tracking)
 
 ## Background
 
-Built on the six-layer framework described in [this blog post](https://tw93.fun/2026-03-12/claude.html). If you've read the post and want to know how your config measures up, `/health` is the fastest way to find out.
+Built on the six-layer framework described in [this blog post](https://tw93.fun/en/2026-03-12/claude.html). If you've read the post and want to know how your config measures up, `/health` is the fastest way to find out.
 
 ## License
 
